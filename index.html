@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <!-- header -->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">PORTFOLIO</a>
+            <div class="nav__menu" id="nav-menu">
+                <ul class="nav__list">
+                    <li>
+                        <a href="#home" class="nav__link">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="nav__link">About</a>
+                    </li>
+                    <li>
+                        <a href="#projects" class="nav__link">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav__link">Contact</a>
+                    </li>
+                </ul>
+                <!-- <div class="nav__close" id="nav-close">
+                    <i class='bx bx-x'></i>
+                </div> -->
+            </div>
+            <!-- <div class="nav__toggle" id="nav-toggle">
+                <i class='bx bx-menu'></i>
+            </div> -->
+        </nav>
+    </header>
+    <!-- Main -->
+     <main class="main" id="main">
+        <!-- Main page -->
+        <section class="home section" id="home">
+            <div class="home__container container grid">
+                <div class="home__widget" id="home-widget"></div>
+                <div class="home__data" id="home-data">
+                    <h3 class="home__greeting">Hello, <span>I'm</span></h3>
+                    <h1 class="home__name">HARSHIL SUTHAR</h1>
+                    <h5 class="home__profession">ELECTRONICS ENGINEERING<br>PYTHON DEVELOPER</h5>
+                    <div class="home__social">
+                        <a href="#"><i class='bx bxl-github' style='color:#ffffff'></i></a>
+                        <a href="#"><i class='bx bxl-linkedin-square' style='color:#ffffff' ></i></a>
+                        <a href="#"><i class='bx bxl-instagram' style='color:#ffffff' ></i></a>
+                    </div>
+                </div>
+                <div class="rect_one"></div>
+                <div class="rect_two"></div>
+                <div class="home__image" id="home-image">
+                    <!-- <img src="assets/profile.jpeg" alt="profile"> -->
+                </div>
+            </div>
+        </section>
+        <!-- About me -->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__profile">
+                    <img src="assets/profile.jpeg" alt="profile">
+                </div>
+                <div class="about__data">
+                    <h1 class="about__heading">About <span>Me</span></h1>
+                    <p class="about__para">
+                        With a dual expertise in Python development and electronics engineering, 
+                        I specialize in creating integrated solutions that blend software and hardware seamlessly. 
+                        My Python skills encompass developing applications, automating tasks, and performing data analysis using tools like Django, Flask, and Pandas. 
+                        In electronics engineering, I excel in designing, testing, and optimizing circuits and systems.
+                    </p>
+                    <button class="cv__button">Download CV</button>
+                </div>
+            </div>
+        </section>
+        <!-- Skills -->
+         <section class="skills section" id="skills">
+            <div class="skills__container container grid">
+                <div class="skills__data">
+                    <h1>Skills</h1>
+                    <p class="skills__para">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, obcaecati. <br>Tempora dicta numquam incidunt architecto vero. Minus explicabo numquam quasi?
+                    </p>
+                    <button class="projects__button">Projects</button>
+                </div>
+                <div class="skills__box">
+                    <img src="assets/python.svg" alt="image" class="skills__img">
+                    <img src="assets/html.svg" alt="image" class="skills__img">
+                    <img src="assets/css.svg" alt="image" class="skills__img">
+                    <img src="assets/javascript.svg" alt="image" class="skills__img">
+                    <img src="assets/figma.svg" alt="image" class="skills__img">
+                    <img src="assets/flask.svg" alt="image" class="skills__img">
+                </div>
+            </div>
+         </section>
+        <!-- projects -->
+        <section class="projects section" id="projects">
+            <div class="projects__container container">
+                <h1 class="projects__heading">Recent Projects</h1>
+                <div class="projects">
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                    <div class="project"></div>
+                </div>
+            </div>
+        </section>
+        <!-- contact -->
+     </main>
+    <!-- footer -->
+     <footer class="footer" id="footer">
+
+     </footer>
+    <script src="script.js"></script>
+</body>
+</html>

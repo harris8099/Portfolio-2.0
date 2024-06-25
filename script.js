@@ -30,3 +30,22 @@ const blurHeader = () => {
                        : header.classList.remove("blur-header") 
 }
 window.addEventListener("scroll", blurHeader);
+
+
+// EMAIl JS
+const contactForm = document.getElementById("contact-form"),
+contactMessage = document.getElementById('contact-message')
+
+const sendEmail = (e) =>{
+    e.preventDefault()
+    emailjs.sendForm("", "","")
+    .then(()=>{
+        contactMessage.textContent = "Message sent successfully"
+        setTimeout(()=>{
+            contactMessage.textContent = ''
+        }, 5000)
+    })
+    contactForm.reset()
+}
+
+contactForm.addEventListener('submit', sendEmail)

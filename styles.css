@@ -73,6 +73,45 @@ input, textarea{
     z-index: var(--z-fixed);
 }
 
+.nav__close,
+.nav__toggle {
+    font-size: 1.5rem;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+.nav__close, .nav__toggle {
+    position: absolute;
+    right: -10rem;
+}
+
+@media screen and (max-width: 500px) {
+    .nav__menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        background-color: hsl(var(--hue), 70%, 4%, .2);
+        backdrop-filter: blur(16px);
+        -webkit-backdrop-filter: blur(16px);
+        width: 50%;
+        height: 100%;
+        padding: 7rem 3rem;
+        transition: right .4s;
+    }
+    .nav__close{
+        position: absolute;
+        top: 1rem;
+        right: 1.5rem;
+    }
+    .nav__toggle{
+        position: static;
+    }
+}
+
+.show-menu {
+    right: 0;
+}
+
 .nav{
     position: relative;
     height: var(--header-height);
@@ -472,3 +511,4 @@ input, textarea{
     color: var(--title-color);
 }
 
+/* Media */

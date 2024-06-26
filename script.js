@@ -1,27 +1,27 @@
-// // Show menu
-// const navMenu = document.getElementById('nav-menu');
-// const navToggle = document.getElementById('nav-toggle');
-// const navClose = document.getElementById('nav-close');
+// Show menu
+const navMenu = document.getElementById('nav-menu');
+const navToggle = document.getElementById('nav-toggle');
+const navClose = document.getElementById('nav-close');
 
-// if(navToggle){
-//     navToggle.addEventListener('click',()=>{
-//         navMenu.classList.add('show-menu')
-//     });
-// }
+if(navToggle){
+    navToggle.addEventListener('click',()=>{
+        navMenu.classList.add('show-menu')
+    });
+}
 
-// if(navClose){
-//     navClose.addEventListener('click',()=>{
-//         navMenu.classList.remove('show-menu')
-//     });
-// }
+if(navClose){
+    navClose.addEventListener('click',()=>{
+        navMenu.classList.remove('show-menu')
+    });
+}
 
-// // Remove menu mobile
-// const navLink = document.querySelectorAll(".nav__link");
+// Remove menu mobile
+const navLink = document.querySelectorAll(".nav__link");
 
-// const linkAction = ()=>{
-//     navMenu.classList.remove('show-menu');
-// };
-// navLink.forEach(n => n.addEventListener('click', linkAction));
+const linkAction = ()=>{
+    navMenu.classList.remove('show-menu');
+};
+navLink.forEach(n => n.addEventListener('click', linkAction));
 
 // Add blur header
 const blurHeader = () => {
@@ -49,3 +49,23 @@ const sendEmail = (e) =>{
 }
 
 contactForm.addEventListener('submit', sendEmail)
+
+// Breakpoints
+const widthMatch = window.matchMedia("(max-width: 1300px)");
+var w = window.innerWidth;
+if (w<=1300){
+    rect(true);
+}
+function rect(x){
+    if (x) {
+        document.getElementById("rect-one").classList.remove("rect_one");
+        document.getElementById("rect-two").classList.remove("rect_two");
+    }
+    else{
+        document.getElementById("rect-one").classList.add("rect_one");
+        document.getElementById("rect-two").classList.add("rect_two");
+    }
+}
+widthMatch.addEventListener("change", (mm) => {
+    rect(mm.matches)
+});

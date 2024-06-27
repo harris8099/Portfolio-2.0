@@ -241,19 +241,26 @@ h1, h2{
 .rect_one{
     top: 30vh;
     right: 10rem;
-    background-color: #47A4A9;
+    /* background-color: #47A4A9; */
+    background-image: url("assets/profile2.jpg");
     /* transform: rotate(20deg); */
     z-index: 50;
     /* border: solid black 0.4rem; */
     /* opacity: 0.8; */
+    background-size: cover; /* Ensures the image covers the div */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    border-radius: 50%;
 }
 
 .rect_two{
-    top: 40vh;
-    right: 6rem;
-    background-color: #FFB1B1;
-    /* transform: rotate(33deg); */
+    top: 30vh;
+    right: 8rem;
+    background-color: var(--body-light-color);
+    /* background-color: #FFB1B1; */
+    transform: rotate(20deg);
     z-index: 1;
+    border-radius: 5px;
     /* border: solid black 0.4rem; */
     /* opacity: 0.8; */
 }

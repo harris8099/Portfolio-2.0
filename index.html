@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
@@ -40,7 +40,7 @@
     <!-- Main -->
      <main class="main" id="main">
         <!-- Main page -->
-        <section class="home section" id="home">
+        <section class="home__section" id="home">
             <div class="home__container container grid">
                 <div class="home__widget" id="home-widget"></div>
                 <div class="home__data" id="home-data">
@@ -61,30 +61,27 @@
             </div>
         </section>
         <!-- About me -->
-        <section class="about section" id="about">
+        <section class="about__section" id="about">
             <div class="about__container container grid">
+                <h1 class="about__heading">About <span>Me</span></h1>
                 <div class="about__profile">
                     <img src="assets/profile.jpeg" alt="profile">
                 </div>
                 <div class="about__data">
-                    <h1 class="about__heading">About <span>Me</span></h1>
                     <p class="about__para">
-                        With a dual expertise in Python development and electronics engineering, 
-                        I specialize in creating integrated solutions that blend software and hardware seamlessly. 
-                        My Python skills encompass developing applications, automating tasks, and performing data analysis using tools like Django, Flask, and Pandas. 
-                        In electronics engineering, I excel in designing, testing, and optimizing circuits and systems.
+                        With a dual expertise in Python development and electronics engineering, I specialize in creating integrated solutions that blend software and hardware seamlessly. My Python skills encompass developing applications, automating tasks, and performing data analysis using tools like Django, Flask, and Pandas. In electronics engineering, I excel in designing, testing, and optimizing circuits and systems.
                     </p>
                     <button class="cv__button">Download CV</button>
                 </div>
             </div>
         </section>
         <!-- Skills -->
-         <section class="skills section" id="skills">
+         <section class="skills__section" id="skills">
             <div class="skills__container container grid">
                 <div class="skills__data">
                     <h1>Skills</h1>
                     <p class="skills__para">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, obcaecati. <br>Tempora dicta numquam incidunt architecto vero. Minus explicabo numquam quasi?
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus, obcaecati. Tempora dicta numquam incidunt architecto vero. Minus explicabo numquam quasi?
                     </p>
                     <button class="projects__button">Projects</button>
                 </div>
@@ -99,7 +96,7 @@
             </div>
          </section>
         <!-- projects -->
-        <section class="projects section" id="projects">
+        <section class="projects__section" id="projects">
             <div class="projects__container container">
                 <h1 class="projects__heading">Recent Projects</h1>
                 <div class="projects">
@@ -113,7 +110,7 @@
             </div>
         </section>
         <!-- contact -->
-         <section class="contact section contact" id="contact">
+         <section class="contact__section contact" id="contact">
             <h2 class="section__title">CONTACT ME</h2>
 
             <div class="contact__container container grid">

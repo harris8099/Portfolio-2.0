@@ -38,7 +38,7 @@ contactMessage = document.getElementById('contact-message')
 
 const sendEmail = (e) =>{
     e.preventDefault()
-    emailjs.sendForm("", "","")
+    emailjs.sendForm('service_ixz8ryz','template_rk4oc5n','#contact-form','YJQ0v27I9kAbXbYHK')
     .then(()=>{
         contactMessage.textContent = "Message sent successfully"
         setTimeout(()=>{

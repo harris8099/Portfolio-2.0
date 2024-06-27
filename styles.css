@@ -62,6 +62,10 @@ input, textarea{
     outline: none;
 }
 
+h1, h2{
+    font-family: var(--body-font);
+}
+
 /* header and navigation */
 
 .header{
@@ -168,9 +172,8 @@ input, textarea{
     height: 100vh;
 } */
 
-.home__container{
+.home__container {
     position: relative;
-    /* top: var(--header-height); */
     height: 100vh;
     display: flex;
     flex-direction: row;
@@ -178,7 +181,6 @@ input, textarea{
     align-items: center;
     padding-inline: 20rem;
 }
-
 .home__widget{
     position: absolute;
     height: 10rem;
@@ -279,32 +281,49 @@ input, textarea{
 
 .about__profile img{
     height: 50vh;
+    border-radius: 10px;
 }
 
 .about__data{
     position: relative;
+    /* display: grid; */
+    grid-template-columns: 1;
+    grid-template-rows: 2;
     /* display: flex;
     flex-direction: column; */
     /* gap: 2rem; */
     /* top: -3.5rem; */
+    min-width: 250px;
     height: 50vh;
+    flex-wrap: wrap;
 }
 .about__heading span{
+    
     color: var(--text-blue-color)
+}
+.about__heading{
+    display: flex;
+    justify-content: center;
+    gap: .5rem;
+    position: relative;
+    top: calc(var(--header-height) + 10px);
 }
 
 .about__heading h1{
     font-size: var(--biggest-font-size);
 }
 
+
+
 .about__data button{
-    position: absolute;
+    /* position: absolute; */
     bottom: -1rem;
     background-color: var(--text-blue-color);
     border: none;
     outline: none;
     color: var(--text-color);
     text-align: center;
+    margin-top: 1rem;
     padding: 1rem 1rem;
     font-size: 1rem;
     border-radius: 20px;
@@ -349,38 +368,39 @@ input, textarea{
     position: relative;
     /* height: 60vh; */
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
+    grid-template-columns: 3fr 1fr;
     background-color: var(--body-light-color);
     margin: 5rem;
     padding: 2rem;
-    gap: 6rem;
+    gap: 3rem;
     border-radius: 20px;
     font-family: var(--body-font);
 }
 
 .skills__img{
     height: 3rem;
+    margin: 1rem;
 }
 
 .skills__data{
-    grid-column: 1/4;
+    /* grid-column: 1/4;
     display: grid;
-    grid-template-rows: repeat(7, 1fr);
+    grid-template-rows: repeat(7, 1fr); */
     /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-width: 160px;
 }
 
 .skills__data button{
-    position: absolute;
-    grid-row: 3/8;
-    bottom: 5rem; 
     background-color: var(--text-blue-color);
     border: none;
     outline: none;
     color: var(--text-color);
-    text-align: center;
-    padding: 1rem 1rem;
-    font-size: 1rem;
-    border-radius: 20px;
+    width: 80px;
+    height: 2.5rem;
+    border-radius: 1rem;
 }
 
 .skills__data button:hover{
@@ -405,6 +425,13 @@ input, textarea{
 
 /* projects */
 
+.projects__heading{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: calc(var(--header-height) + 15px);
+}
+
 .projects__container{
     height: 100vh;
     position: relative;
@@ -412,6 +439,7 @@ input, textarea{
     padding-inline: 10rem;
     font-family: var(--body-font);
     flex-direction: column;
+    flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
     align-items: center;
@@ -432,11 +460,19 @@ input, textarea{
 } */
 
 .projects{
-    column-gap: 10rem;
+    column-gap: 5vw;
     display: grid;
     row-gap: 3rem;
     grid-template-columns: repeat(3, 1fr);
 }
+
+/* .projects{
+    display: inline-flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+} */
 
 /* Contact */
 

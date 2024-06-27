@@ -38,7 +38,7 @@ contactMessage = document.getElementById('contact-message')
 
 const sendEmail = (e) =>{
     e.preventDefault()
-    emailjs.sendForm('service_ixz8ryz','template_rk4oc5n','#contact-form',`${{ secrets.PUBLIC_KEY }}`)
+    emailjs.sendForm('service_ixz8ryz','template_rk4oc5n','#contact-form',"")
     .then(()=>{
         contactMessage.textContent = "Message sent successfully"
         setTimeout(()=>{
